@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtName"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"/>
+    <TextView
+        android:id="@+id/txtRollNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:text="Roll No."
+        android:layout_marginLeft="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <EditText
+        android:id="@+id/edtRollNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtRollNo"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtRollNo"
+        android:layout_below="@+id/edtUsername"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_below="@+id/txtRollNo"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="20dp"/>
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtAddress"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtAddress"
+        android:layout_marginLeft="10dp"/>
+    <Button
+        android:id="@+id/addStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAddress"
+        android:text="Add Student"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:layout_below="@+id/addStudent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#63C5DA">
+        <TextView
+            android:id="@+id/studentList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student List"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginLeft="120dp"/>
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/studentList"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
